@@ -1,7 +1,10 @@
 import React from 'react'
 import Heroimage from "../assects/FIRSTimage.png"
 import { Link} from "react-router-dom";
-const Hero = () => {
+
+
+const HeroSection = () => {
+
   return (
     <div>
       <section className="hero-gradient text-white pt-24 pb-16 md:pt-32">
@@ -52,4 +55,4 @@ const Hero = () => {
   )
 }
 
-export default Hero;
+export default HeroSection;

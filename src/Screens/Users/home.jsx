@@ -1,30 +1,29 @@
 import React from 'react'
-import Hero from "../../Pages/Hero"
-import Statistics from '../../Pages/Statistics';
-import CampDetails from '../../Pages/CampDetails';
-// import RegistrationForm from '../../Pages/RegistrationForm';
-import Process from '../../Pages/Process';
-import Eligibility from '../../Pages/Eligibility';
-import Testimonials from '../../Pages/Testimonials';
-import FAQ from '../../Pages/FAQ';
-import CTA from '../../Pages/CTA';
-import AboutSection from '../../Pages/About/AboutSection';
+
+import AboutSection from '../AboutSection';
+import FAQSection from '../FAQSection';
+import HeroSection from '../HeroSection';
+import StatisticSection from '../StatisticSection';
+import CampSection from '../CampSection';
+import ProcesSection from '../ProcesSection';
+import EligibilitySection from '../EligibilitySection';
+import TestimonialSection from '../TestimonialSection';
+import CTASection from '../CTASection';
 
 
 
 const home = () => {
   return (
     <div >
-        <Hero/>
-        <Statistics/>
+        <HeroSection/>
+        <StatisticSection/>
         <AboutSection/>
-        <CampDetails/>
-        {/* <RegistrationForm/> */}
-        <Process/>
-        <Eligibility/>
-        <Testimonials/>
-        <FAQ/>
-        <CTA/>
+        <CampSection/>
+        <ProcesSection/>
+        <EligibilitySection/>
+        <TestimonialSection/>
+        <FAQSection/>
+        <CTASection/>
     </div>
   )
 }

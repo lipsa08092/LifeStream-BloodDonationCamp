@@ -24,16 +24,16 @@ function Footer() {
             </p>
 
             <div className="flex space-x-3">
-              <a href="#" className="text-gray-400 hover:text-white transition">
+              <a href="#" className="text-gray-400 text-2xl hover:text-blue-600 transition">
                 <FaFacebook />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition">
+              <a href="#" className="text-gray-400 text-2xl hover:text-sky-500 transition">
                 <FaTwitter />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition">
+              <a href="#" className="text-gray-400 text-2xl hover:text-pink-600 transition">
                 <FaSquareInstagram />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition">
+              <a href="#" className="text-gray-400 text-2xl hover:text-blue-600 transition">
                 <BsLinkedin />
               </a>
             </div>

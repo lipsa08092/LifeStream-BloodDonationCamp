@@ -7,8 +7,10 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [openRegisterModal, setOpenRegisterModal] = useState(false);
 
-  const toggleMenu = () => setIsOpen(!isOpen);
-  const closeMenu = () => setIsOpen(false);
+  const toggleMenu = () => 
+    setIsOpen(!isOpen);
+  const closeMenu = () =>
+    setIsOpen(false);
 
   return (
     <div>
@@ -30,16 +32,15 @@ const Navbar = () => {
                 Camp Details
               </Link>
 
+              <Link to="/faq" className="text-gray-700 hover:text-primary">
+                FAQ
+              </Link>
               <button
                 onClick={() => setOpenRegisterModal(true)}
                 className="text-gray-700 hover:text-primary"
               >
                 Register
               </button>
-
-              <Link to="/faq" className="text-gray-700 hover:text-primary">
-                FAQ
-              </Link>
             </div>
 
             <button onClick={toggleMenu} className="md:hidden text-gray-700">

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const FAQ= () => {
+function FAQSection() {
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggleFAQ = (index) => {
@@ -32,7 +32,7 @@ const FAQ= () => {
 
   return (
     <div className=" px-6 py-10">
-      <section className="py-16 bg-white">
+      <section className="bg-white">
         <div className="container-xl px-6 max-w-4xl">
           <div className="text-center mb-14">
             <h2 className="text-3xl font-bold text-dark mb-4">
@@ -76,4 +76,4 @@ const FAQ= () => {
   );
 }
 
-export default FAQ;
+export default FAQSection;

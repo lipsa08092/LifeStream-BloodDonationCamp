@@ -4,9 +4,10 @@ import { FaSyringe } from "react-icons/fa";
 import { FaHospital } from "react-icons/fa6";
 import { FaHeart } from "react-icons/fa";
 
-function Statistics() {
+const  StatisticSection =() => {
+
   return (
-    <section className="bg-white py-20 w-full mt-5">
+    <section className="bg-white py-17 w-full mt-12">
       <div className="mx-auto px-7">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           
@@ -39,4 +40,4 @@ function Statistics() {
   );
 }
 
-export default Statistics;
+export default StatisticSection;

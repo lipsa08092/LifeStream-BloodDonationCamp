@@ -5,9 +5,9 @@ import Footer from "./Components/Common/Footer";
 import ScrollToTop from "./Components/Common/ScrollToTop";
 
 import Home from "./Screens/Users/home"
-import About from "./Pages/About/AboutSection";
+import About from "./Pages/About";
 import CampDetails from "./Pages/CampDetails";
-import RegistrationForm from "./Pages/RegistrationForm";
+import Register from "./Components/RegistrationModal";
 import FAQ from "./Pages/FAQ";
 
 const App = () => {
@@ -19,7 +19,6 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/camp" element={<CampDetails />} />
-        <Route path="/register" element={<RegistrationForm />} />
         <Route path="/faq" element={<FAQ />} />
       </Routes>
       <Footer />

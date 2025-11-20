@@ -3,9 +3,8 @@ import { FaUser } from "react-icons/fa";
 
 function Testimonials() {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-gradient-to-b from-secondary/20 to-white">
       <div className="container mx-auto px-6">
-        
 
         <div className="text-center mb-14">
           <h2 className="text-3xl font-bold text-dark mb-4">Heroes Among Us</h2>

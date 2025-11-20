@@ -4,10 +4,10 @@ import { SlCalender } from "react-icons/sl";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaClock, FaUtensils } from "react-icons/fa";
 
-const Camp = () => {
+const CampSection = () => {
   return (
-    <div className="pt-12 px-4 sm:px-6 lg:px-8">
-      <section className=" py-16 bg-white container-xl mx-auto">
+    <div className="py-8 px-4 sm:px-6 lg:px-8">
+      <section className=" bg-white container-xl mx-auto">
         <div className="max-w-6xl mx-auto px-6 container-xl">
           <div className="w-full text-center mb-8">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
@@ -82,4 +82,4 @@ const Camp = () => {
   );
 };
 
-export default Camp;
+export default CampSection;

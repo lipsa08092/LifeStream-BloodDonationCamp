@@ -3,6 +3,7 @@ import { FaTimes } from "react-icons/fa";
 
 
 const RegistrationModal = ({ isOpen, onClose }) => {
+  
  useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";

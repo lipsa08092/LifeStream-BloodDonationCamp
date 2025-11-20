@@ -1,12 +1,11 @@
 import React from "react";
 
-function Process() {
+const ProcesSection =() => {
   return (
     <div>
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-gradient-to-b from-secondary/20 to-white">
         <div className="container-xl px-6">
           
-        
           <div className="text-center mb-14">
             <h2 className="text-3xl font-bold text-dark mb-4">
               The Donation Process
@@ -16,10 +15,7 @@ function Process() {
             </p>
           </div>
 
-        
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 justify-center">
-            
-    
             <div className="text-center max-w-xs mx-auto">
               <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-2xl font-bold text-primary">1</span>
@@ -64,4 +60,4 @@ function Process() {
   );
 }
 
-export default Process;
+export default ProcesSection;

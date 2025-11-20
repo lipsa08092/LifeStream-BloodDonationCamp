@@ -2,11 +2,11 @@ import React from "react";
 import { FaCheckCircle } from "react-icons/fa";
 import { FaClock } from "react-icons/fa6";
 
-function Eligibility() {
+const EligibilitySection = () =>{
   return (
-    <div className="mt-12 px-4 sm:px-6 lg:px-8">
-      <section className="py-16 bg-white">
-        <div className="container-xl px-6">
+    <div className="px-4 sm:px-6 lg:px-8 ">
+      <section className="py-5 bg-white">
+        <div className="container-xl  px-6">
           <div className="text-center mb-14">
             <h2 className="text-3xl font-bold text-dark mb-4">Are You Eligible?</h2>
             <p className="text-lg text-gray-600">
@@ -106,4 +106,4 @@ function Eligibility() {
   );
 }
 
-export default Eligibility;
+export default EligibilitySection;
