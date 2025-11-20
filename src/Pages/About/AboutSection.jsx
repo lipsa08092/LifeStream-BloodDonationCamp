@@ -3,7 +3,7 @@ import { FaBolt } from "react-icons/fa6";
 import { FaBaby } from "react-icons/fa";
 import { FaPrescriptionBottleAlt } from "react-icons/fa";
 
-const About = () => {
+const AboutSection = () => {
   return (
     <div className="pt-10 px-4 sm:px-6 lg:px-8">
       <section className="py-10 sm:py-16 bg-white container-xl mx-auto">
@@ -63,4 +63,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutSection;

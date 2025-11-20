@@ -4,7 +4,6 @@ function RegistrationForm() {
   return (
     <section className="py-20 bg-white">
       <div className="container-xl px-6 max-w-4xl mx-auto">
-
         <div className="text-center mb-14">
           <h2 className="text-3xl font-bold text-dark mb-4">
             Register as a Donor
@@ -13,10 +12,8 @@ function RegistrationForm() {
             Join our life-saving mission. Fill out the form below to schedule your donation.
           </p>
         </div>
-
         <div className="bg-white rounded-2xl shadow-2xl p-10">
-          <form id="donorForm" className="space-y-8">
-
+          <form  className="space-y-8">
             <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
@@ -72,7 +69,6 @@ function RegistrationForm() {
                 </select>
               </div>
             </div>
-
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-2">
                 Preferred Time Slot *
@@ -104,14 +100,12 @@ function RegistrationForm() {
               </label>
             </div>
 
-    
             <button
               type="submit"
               className="w-full bg-primary text-white py-4 px-6 rounded-lg font-semibold text-lg hover:bg-accent transition"
             >
               Register Now
             </button>
-
           </form>
         </div>
       </div>
