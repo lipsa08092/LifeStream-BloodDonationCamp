@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaHeartbeat, FaBars, FaTimes } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import RegistrationModal from "../RegistrationModal";
 
 const Navbar = () => {
@@ -12,6 +12,11 @@ const Navbar = () => {
   const closeMenu = () =>
     setIsOpen(false);
 
+  const navLinkClass = ({ isActive }) =>
+    isActive
+      ? "text-primary font-bold"
+      : "text-gray-700 hover:text-primary";
+
   return (
     <div>
       <nav className="bg-white shadow-lg fixed w-full z-50 top-0 left-0">
@@ -22,19 +27,11 @@ const Navbar = () => {
               <span className="font-bold text-xl text-primary">LifeStream</span>
             </div>
             <div className="hidden md:flex items-center space-x-8 font-bold">
-              <Link to="/" className="text-gray-700 hover:text-primary">
-                Home
-              </Link>
-              <Link to="/about" className="text-gray-700 hover:text-primary">
-                About
-              </Link>
-              <Link to="/camp" className="text-gray-700 hover:text-primary">
-                Camp Details
-              </Link>
+              <NavLink to="/" className={navLinkClass}>Home</NavLink>
+              <NavLink to="/about" className={navLinkClass}>About</NavLink>
+              <NavLink to="/camp" className={navLinkClass}>Camp Details</NavLink>
+              <NavLink to="/faq" className={navLinkClass}>FAQ</NavLink>
 
-              <Link to="/faq" className="text-gray-700 hover:text-primary">
-                FAQ
-              </Link>
               <button
                 onClick={() => setOpenRegisterModal(true)}
                 className="text-gray-700 hover:text-primary"
@@ -53,9 +50,11 @@ const Navbar = () => {
           >
             <div className="bg-white py-4 px-4 space-y-4 shadow-lg rounded-b-lg">
 
-              <Link onClick={closeMenu} to="/" className="block text-gray-700 hover:text-primary">Home</Link>
-              <Link onClick={closeMenu} to="/about" className="block text-gray-700 hover:text-primary">About</Link>
-              <Link onClick={closeMenu} to="/camp" className="block text-gray-700 hover:text-primary">Camp Details</Link>
+              <NavLink onClick={closeMenu} to="/" className={navLinkClass}>Home</NavLink>
+              <NavLink onClick={closeMenu} to="/about" className={navLinkClass}>About</NavLink>
+              <NavLink onClick={closeMenu} to="/camp" className={navLinkClass}>Camp Details</NavLink>
+              <NavLink onClick={closeMenu} to="/faq" className={navLinkClass}>FAQ</NavLink>
+
               <button
                 onClick={() => {
                   closeMenu();
@@ -65,7 +64,6 @@ const Navbar = () => {
               >
                 Register
               </button>
-              <Link onClick={closeMenu} to="/faq" className="block text-gray-700 hover:text-primary">FAQ</Link>
             </div>
           </div>
         </div>

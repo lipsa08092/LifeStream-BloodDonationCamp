@@ -4,10 +4,9 @@ import Navbar from "./Components/Common/Navbar";
 import Footer from "./Components/Common/Footer";
 import ScrollToTop from "./Components/Common/ScrollToTop";
 
-import Home from "./Screens/Users/home"
+import Home from "./Pages/Home"
 import About from "./Pages/About";
 import CampDetails from "./Pages/CampDetails";
-import Register from "./Components/RegistrationModal";
 import FAQ from "./Pages/FAQ";
 
 const App = () => {
