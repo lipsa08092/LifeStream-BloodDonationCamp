@@ -1,9 +1,12 @@
 import React from 'react'
 import Heroimage from "../assects/FIRSTimage.png"
 import { Link} from "react-router-dom";
+import { useState } from 'react';
+import RegistrationModal from '../Components/RegistrationModal';
 
 
 const HeroSection = () => {
+  const [openRegisterModal, setOpenRegisterModal] = useState(false);
 
   return (
     <div>
@@ -21,11 +24,11 @@ const HeroSection = () => {
               </p>
 
               <div className="flex flex-wrap justify-center lg:justify-start gap-4">
-                <Link to= "/register"
+                <button onClick={() => setOpenRegisterModal(true)}
                   className="bg-white text-primary px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition pulse-animation"
                 >
                   Register Now
-                </Link>
+                </button>
                 <Link to= "/about"
                   className="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-primary transition"
                 >
@@ -40,7 +43,7 @@ const HeroSection = () => {
                   alt="People donating blood in a clean, modern environment"
                   className="rounded-xl shadow-2xl w-full"
                 />
-                <div className="absolute -bottom-5 left-1/2 -translate-x-1/2 sm:left-0 sm:translate-x-0 sm:-bottom-4 bg-white text-primary p-4 rounded-lg shadow-lg">
+                <div className="absolute -bottom-6 -left-4 bg-white text-primary p-4 rounded-lg shadow-lg">
                   <div className="text-center">
                     <div className="text-xl font-bold">127+</div>
                     <div className="text-sm">Lives Saved</div>
@@ -51,6 +54,10 @@ const HeroSection = () => {
           </div>
         </div>
       </section>
+       <RegistrationModal
+        isOpen={openRegisterModal}
+        onClose={() => setOpenRegisterModal(false)}
+      />
     </div>
   )
 }

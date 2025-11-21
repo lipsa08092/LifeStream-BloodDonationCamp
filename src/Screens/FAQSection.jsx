@@ -36,7 +36,7 @@ function FAQSection() {
         <div className="container-xl px-6 max-w-4xl">
           <div className="text-center mb-14">
             <h2 className="text-3xl font-bold text-dark mb-4">
-              Frequently Asked Questions
+              <span className="text-primary">Fre</span>quently <span className="text-primary">A</span>sked <span className="text-primary">Q</span>uestions
             </h2>
             <p className="text-xl text-gray-600">
               Get answers to common questions about blood donation.

@@ -7,6 +7,7 @@ import { FaFacebook } from "react-icons/fa6";
 import { FaTwitter } from "react-icons/fa";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { BsLinkedin } from "react-icons/bs";
+import {Link} from "react-router-dom";
 
 function Footer() {
   return (
@@ -43,44 +44,33 @@ function Footer() {
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <a
-                  href="#home"
+                <Link to= "/"
                   className="text-gray-400 hover:text-white transition text-sm"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#about"
+                <Link to= "/about"
+                
                   className="text-gray-400 hover:text-white transition text-sm"
                 >
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#camp"
+                <Link to= "/camp"
                   className="text-gray-400 hover:text-white transition text-sm"
                 >
                   Camp Details
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#register"
-                  className="text-gray-400 hover:text-white transition text-sm"
-                >
-                  Register
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#faq"
+                <Link to= "/faq"
                   className="text-gray-400 hover:text-white transition text-sm"
                 >
                   FAQ
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

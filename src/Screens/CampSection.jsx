@@ -11,18 +11,15 @@ const CampSection = () => {
         <div className="max-w-6xl mx-auto px-6 container-xl">
           <div className="w-full text-center mb-8">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
-              Blood Donation Camp Details
+              Bl<span className="text-primary">oo</span>d Donation{" "}
+              <span className="text-primary">Camp</span> Details
             </h2>
-            
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-
-        
+          <div className="grid grid-cols-1 lg:grid-cols-2 mt-14 gap-10 items-center">
             <div className="space-y-10">
-
               <div className="flex items-start gap-4">
-                <div className="bg-red-100 p-3 rounded-xl shadow-sm">
+                <div className="bg-red-100 p-3 rounded-xl shadow-sm mt-1">
                   <SlCalender className="text-red-600 text-xl" />
                 </div>
                 <div>
@@ -34,7 +31,7 @@ const CampSection = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="bg-red-100 p-3 rounded-xl shadow-sm">
+                <div className="bg-red-100 p-3 rounded-xl shadow-sm mt-1">
                   <FaLocationDot className="text-red-600 text-xl" />
                 </div>
                 <div>
@@ -44,19 +41,19 @@ const CampSection = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="bg-red-100 p-3 rounded-xl shadow-sm">
+                <div className="bg-red-100 p-3 rounded-xl shadow-sm mt-1">
                   <FaClock className="text-red-600 text-xl" />
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold">Duration</h4>
                   <p className="text-gray-600">
-                    Approximately 45–60 minutes per donation
+                    Approximately 45-60 minutes per donation
                   </p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="bg-red-100 p-3 rounded-xl shadow-sm">
+                <div className="bg-red-100 p-3 rounded-xl shadow-sm mt-1">
                   <FaUtensils className="text-red-600 text-xl" />
                 </div>
                 <div>
@@ -71,10 +68,9 @@ const CampSection = () => {
               <img
                 src={CampDetailsimage}
                 alt="Blood donation camp"
-                className="rounded-xl shadow-xl w-[75%] sm:w-[70%] md:w-[65%] lg:w-[70%] mt-5"
+                className=" shadow-xl w-[800px] sm:w-[700px] md:w-[500px] lg:w-[350px] mt-5"
               />
             </div>
-
           </div>
         </div>
       </section>

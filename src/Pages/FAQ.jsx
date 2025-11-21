@@ -31,12 +31,12 @@ const FAQ= () => {
   ];
 
   return (
-    <div className=" px-6 py-10">
+    <div className="pt-12">
       <section className="py-16 bg-white">
         <div className="container-xl px-6 max-w-4xl">
           <div className="text-center mb-14">
             <h2 className="text-3xl font-bold text-dark mb-4">
-              Frequently Asked Questions
+              Frequently Asked <span className="text-primary">Q</span>uestions
             </h2>
             <p className="text-xl text-gray-600">
               Get answers to common questions about blood donation.

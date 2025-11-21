@@ -11,25 +11,25 @@ const  StatisticSection =() => {
       <div className="mx-auto px-7">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           
-          <div className="text-center p-8 rounded-2xl  shadow-md hover:shadow-xl hover:bg-secondary/30 transition">
+          <div className="text-center p-8 rounded-2xl  shadow-md hover:shadow-xl hover:bg-gradient-to-b from-secondary/30 to-white hover:scale-105 transition">
             <BsPeopleFill className="text-4xl text-primary mb-4 mx-auto" />
             <div className="text-3xl font-bold text-dark">2,500+</div>
             <div className="text-sm text-gray-600 mt-1">Donors Registered</div>
           </div>
 
-          <div className="text-center p-8 rounded-2xl shadow-md hover:shadow-xl  hover:bg-secondary/30 transition">
+          <div className="text-center p-8 rounded-2xl shadow-md hover:shadow-xl  hover:bg-gradient-to-b from-secondary/30 to-white hover:scale-105 transition">
             <FaSyringe className="text-4xl text-primary mb-4 mx-auto" />
             <div className="text-3xl font-bold text-dark">1,800+</div>
             <div className="text-sm text-gray-600 mt-1">Successful Donations</div>
           </div>
 
-          <div className="text-center p-8 rounded-2xl shadow-md hover:shadow-xl  hover:bg-secondary/30 transition">
+          <div className="text-center p-8 rounded-2xl shadow-md hover:shadow-xl  hover:bg-gradient-to-b from-secondary/30 to-white hover:scale-105 transition">
             <FaHospital className="text-4xl text-primary mb-4 mx-auto" />
             <div className="text-3xl font-bold text-dark">12+</div>
             <div className="text-sm text-gray-600 mt-1">Partner Hospitals</div>
           </div>
 
-          <div className="text-center p-8 rounded-2xl shadow-md hover:shadow-xl  hover:bg-secondary/30 transition">
+          <div className="text-center p-8 rounded-2xl shadow-md hover:shadow-xl  hover:bg-gradient-to-b from-secondary/30 to-white hover:scale-105 transition">
             <FaHeart className="text-4xl text-primary mb-4 mx-auto" />
             <div className="text-3xl font-bold text-dark">24/7</div>
             <div className="text-sm text-gray-600 mt-1">Emergency Support</div>

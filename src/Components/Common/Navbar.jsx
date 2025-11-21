@@ -48,9 +48,9 @@ const Navbar = () => {
             className={`md:hidden transition-all duration-300 overflow-hidden 
             ${isOpen ? "max-h-64" : "max-h-0"}`}
           >
-            <div className="bg-white py-4 px-4 space-y-4 shadow-lg rounded-b-lg">
+            <div className="bg-white py-4 px-4 space-y-4 shadow-lg rounded-b-lg flex flex-col font-semibold">
 
-              <NavLink onClick={closeMenu} to="/" className={navLinkClass}>Home</NavLink>
+              <NavLink onClick={closeMenu} to="/" className= {navLinkClass}>Home</NavLink>
               <NavLink onClick={closeMenu} to="/about" className={navLinkClass}>About</NavLink>
               <NavLink onClick={closeMenu} to="/camp" className={navLinkClass}>Camp Details</NavLink>
               <NavLink onClick={closeMenu} to="/faq" className={navLinkClass}>FAQ</NavLink>
@@ -60,7 +60,7 @@ const Navbar = () => {
                   closeMenu();
                   setOpenRegisterModal(true);
                 }}
-                className="block text-gray-700 hover:text-primary"
+                className=" text-gray-700 hover:text-primary text-left"
               >
                 Register
               </button>

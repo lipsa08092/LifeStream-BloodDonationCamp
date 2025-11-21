@@ -1,22 +1,24 @@
 import React from "react";
 
-const ProcesSection =() => {
+const ProcesSection = () => {
   return (
     <div>
       <section className="py-20 bg-gradient-to-b from-secondary/20 to-white">
         <div className="container-xl px-6">
-          
           <div className="text-center mb-14">
             <h2 className="text-3xl font-bold text-dark mb-4">
-              The Donation Process
+              The <span className="text-primary">Donation</span> Process
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Simple, safe, and life-changing. Here's what to expect during your donation.
+              Simple, safe, and life-changing. Here's what to expect during your
+              donation.
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 justify-center">
-            <div className="text-center max-w-xs mx-auto">
+          <div className="relative grid sm:grid-cols-2 lg:grid-cols-4 gap-10 justify-center">
+            <div className="hidden lg:block absolute top-10 left-0 w-full border-t-2 border-primary/30"></div>
+
+            <div className="text-center max-w-xs mx-auto relative bg-white z-10">
               <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-2xl font-bold text-primary">1</span>
               </div>
@@ -25,7 +27,8 @@ const ProcesSection =() => {
                 Complete quick paperwork and show your ID.
               </p>
             </div>
-            <div className="text-center max-w-xs mx-auto">
+
+            <div className="text-center max-w-xs mx-auto relative bg-white z-10">
               <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-2xl font-bold text-primary">2</span>
               </div>
@@ -34,16 +37,18 @@ const ProcesSection =() => {
                 Brief health screening and iron level test.
               </p>
             </div>
-            <div className="text-center max-w-xs mx-auto">
+
+            <div className="text-center max-w-xs mx-auto relative bg-white z-10">
               <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-2xl font-bold text-primary">3</span>
               </div>
               <h3 className="text-lg font-semibold mb-3">Donation</h3>
               <p className="text-gray-600">
-                Comfortable donation takes 8–10 minutes.
+                Comfortable donation takes 8-10 minutes.
               </p>
             </div>
-            <div className="text-center max-w-xs mx-auto">
+
+            <div className="text-center max-w-xs mx-auto relative bg-white z-10">
               <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-2xl font-bold text-primary">4</span>
               </div>
@@ -52,12 +57,11 @@ const ProcesSection =() => {
                 Enjoy snacks and drinks while you relax after donation.
               </p>
             </div>
-
           </div>
         </div>
       </section>
     </div>
   );
-}
+};
 
 export default ProcesSection;
